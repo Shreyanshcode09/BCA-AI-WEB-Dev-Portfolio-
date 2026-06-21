@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hotel Reservation | The Opulent Manor</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="hotelReservation.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+<div class="container">
+
+<div class="nav-logo">
+<a href="index.html">
+<img src="IMAGES/logo 2.png" alt="Logo">
+</a>
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="HotelReservation.html">Hotel Reservation</a></li>
+</ul>
+
+</div>
+</nav>
+
+<!-- HERO -->
+
+<header class="reservation-hero">
+
+<div class="container">
+
+<h1>Luxury Hotel Reservation</h1>
+
+<p>
+Reserve your stay at The Opulent Manor and experience
+royal hospitality.
+</p>
+
+</div>
+
+</header>
+
+<!-- ROOM TYPES -->
+
+<section class="room-types">
+
+<div class="container">
+
+<h2>Our Accommodations</h2>
+
+<div class="room-grid">
+
+<div class="room-card">
+<h3>Deluxe Room</h3>
+<p>Elegant comfort with premium amenities.</p>
+<span>₹8,000 / Night</span>
+</div>
+
+<div class="room-card">
+<h3>Executive Room</h3>
+<p>Luxury accommodation for business travelers.</p>
+<span>₹12,000 / Night</span>
+</div>
+
+<div class="room-card">
+<h3>Royal Room</h3>
+<p>Premium luxury experience with city views.</p>
+<span>₹18,000 / Night</span>
+</div>
+
+<div class="room-card special">
+<h3>Royal Suite</h3>
+<p>Room 601</p>
+<span>₹35,000 / Night</span>
+</div>
+
+<div class="room-card special">
+<h3>Presidential Suite</h3>
+<p>Room 701</p>
+<span>₹75,000 / Night</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- RESERVATION FORM -->
+
+<section class="reservation-section">
+
+<div class="container">
+
+<h2>Book Your Stay</h2>
+
+<form id="hotelReservationForm">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<input type="date" required>
+
+<input type="date" required>
+
+<input type="number"
+placeholder="Number of Guests"
+min="1"
+max="10"
+required>
+
+<select id="floorSelect" required>
+
+<option value="">Select Floor</option>
+
+<option value="1">Floor 1</option>
+<option value="2">Floor 2</option>
+<option value="3">Floor 3</option>
+<option value="4">Floor 4</option>
+<option value="5">Floor 5</option>
+<option value="6">Royal Suite Floor</option>
+<option value="7">Presidential Floor</option>
+
+</select>
+
+<select id="roomSelect" required>
+<option value="">Select Room</option>
+</select>
+
+<textarea
+placeholder="Special Requests"
+rows="4"></textarea>
+
+<button type="submit">
+Reserve Now
+</button>
+
+</form>
+
+<div id="reservationMessage"></div>
+
+</div>
+
+</section>
+
+<!-- FLOOR OVERVIEW -->
+
+<section class="floors">
+
+<div class="container">
+
+<h2>Hotel Layout</h2>
+
+<div class="floor-card">
+<h3>Floor 1</h3>
+<p>Rooms 101 - 110</p>
+</div>
+
+<div class="floor-card">
+<h3>Floor 2</h3>
+<p>Rooms 201 - 210</p>
+</div>
+
+<div class="floor-card">
+<h3>Floor 3</h3>
+<p>Rooms 301 - 310</p>
+</div>
+
+<div class="floor-card">
+<h3>Floor 4</h3>
+<p>Rooms 401 - 410</p>
+</div>
+
+<div class="floor-card">
+<h3>Floor 5</h3>
+<p>Rooms 501 - 510</p>
+</div>
+
+<div class="floor-card luxury">
+<h3>Floor 6</h3>
+<p>Royal Suite - Room 601</p>
+</div>
+
+<div class="floor-card luxury">
+<h3>Floor 7</h3>
+<p>Presidential Suite - Room 701</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+<div class="container">
+<p>
+© 2026 THE OPULENT MANOR.
+All Rights Reserved.
+</p>
+</div>
+</footer>
+
+<script src="hotelReservation.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+.reservation-hero{
+text-align:center;
+background-image: url(IMAGES/table1.jpg);
+color:#51211d;
+}
+
+
+#reservationForm{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+#reservationForm input{
+padding:12px;
+font-size:16px;
+border:3px solid #a7875d;
+}
+
+#reservationForm button{
+padding:14px;
+background:#3e1f1d;
+color:#dab27d;
+border:none;
+cursor:pointer;
+font-size:16px;
+transition:0.3s;
+}
+
+#reservationForm button:hover{
+background:#d27070;
+}
+
+#response{
+margin-top:20px;
+text-align:center;
+font-weight:500;
+}

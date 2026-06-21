@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Restaurant Reservation | The Opulent Manor</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="reservation.css">
+</head>
+
+<body>
+<nav class="navbar">
+<div class="container">
+<div class="nav-logo">
+<a href="index.html">
+  <img src="IMAGES/logo 2.png" alt="Logo" />
+</a>
+</div>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="HotelReservation.html"> Hotel Reservation</a></li>
+</ul>
+</div>
+</nav>
+<header class="reservation-hero">
+<div class="container">
+<h1>Restaurant Table Reservation</h1>
+<p>Reserve your Fine Dining experience at The Opulent Manor.</p>
+<section class="reservation-section">
+<div class="container">
+<form id="reservationForm">
+
+<input type="text" name="name" placeholder="Full Name" required>
+
+<input type="tel" name="phone" placeholder="Phone Number" required>
+
+<input type="number" name="guests" placeholder="Guests" min="1" max="15" required>
+
+<div class="guest-ages">
+  <label>
+    <input type="checkbox" name="guestages" value="children">
+    Children (under 12 years)
+  </label>
+
+  <label>
+    <input type="checkbox" name="guestages" value="adults">
+    Adults (12–50 years)
+  </label>
+
+  <label>
+    <input type="checkbox" name="guestages" value="elderly">
+    Elderly (50+ years)
+  </label>
+</div>
+
+<input type="text" name="guestsDescription" placeholder="Guests Description/Special Requests" required>
+
+<input type="date" name="date" required>
+
+<input type="time" name="time" required>
+
+<button type="submit">Reserve My Table</button>
+
+</form>
+
+<div id="response"></div>
+
+</div>
+</section>
+</div>
+</header>
+
+<footer class="footer">
+<div class="container">
+<p>&copy; 2025 OPULENT HOTEL GROUPS "THE OPULENT MANOR". All rights reserved.</p>
+</div>
+</footer>
+
+<script src="reservation.js"></script>
+
+</body>
+</html>

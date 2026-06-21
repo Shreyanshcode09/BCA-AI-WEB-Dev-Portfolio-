@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Welcome | THE OPULENT MANOR</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inter&display=swap" rel="stylesheet">
+
+<style>
+/* Fullscreen Welcome Page */
+.welcome-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+  url('Images/bg2.png');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+.welcome-content {
+  max-width: 800px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.welcome-content h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 3rem;
+  color: #ffcb88;
+  margin-bottom: 1rem;
+}
+
+.welcome-content p {
+  font-size: 1.3rem;
+  color: #e8caa4;
+  margin-bottom: 3rem;
+}
+
+.enter-btn {
+  background: #3e1f1d;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 40px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.enter-btn:hover {
+  background: #b8962e;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+</style>
+
+</head>
+<body>
+
+<section class="welcome-page">
+  <div class="welcome-content">
+    <h1>Welcome to The Opulent Manor</h1>
+    <p>
+      We are honored to have you here. Step into a world of refined luxury,
+      timeless elegance, and unforgettable experiences. From exquisite dining
+      to serene stays, every moment at The Opulent Manor is crafted to perfection.
+    </p>
+
+    <a href="index.html" class="enter-btn">Enter The Manor</a>
+  </div>
+</section>
+
+</body>
+</html>
